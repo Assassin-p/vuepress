@@ -31,7 +31,7 @@ jobs:
       - name: install yarn
         run: npm install --global yarn
       - name: build app
-        run: yarn build
+        run: yarn docs:build
       - name: copy dist file with scp
         uses: appleboy/scp-action@v0.0.1
         with:
