@@ -28,17 +28,19 @@ jobs:
           node-version: "16.X"
       - name: install deps
         run: npm install
+      - name: install yarn
+        run: npm install yarn
       - name: build app
-        run: npm run build
+        run: yarn build
       - name: copy dist file with scp
         uses: appleboy/scp-action@v0.0.1
         with:
-          host:
-          username:
-          password:
+          host: ${{secrets.HOST}}
+          username: ${{secrets.NAME}}
+          password: ${{secrets.PASSWORD}}
           port: 22
           source: 'docs'
-          target: ''
+          target: ${{secrets.TARGET}}
      
      
      
