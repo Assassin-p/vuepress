@@ -39,7 +39,7 @@ jobs:
           username: ${{secrets.NAME}}
           password: ${{secrets.PASSWORD}}
           port: 22
-          source: 'docs'
+          source: 'docs/'
           target: ${{secrets.TARGET}}
      
      
