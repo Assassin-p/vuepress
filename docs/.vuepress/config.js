@@ -8,20 +8,29 @@ module.exports = {
   // 主题和它的配置
   theme: '@vuepress/theme-default',
   themeConfig: {
-    logo: 'https://vuejs.org/images/logo.png',
+    logo: '/images/title.jpg',
     navbar: [
-      // NavbarItem
       {
-        text: 'Foo',
+        text: '常用工具',
         link: '/foo/',
       },
-      // NavbarGroup
       {
-        text: 'Group',
-        children: ['/group/foo.md', '/group/bar.md'],
+        text: '常用文档',
+        children: ['vue', 'mdn'],
       },
-      // 字符串 - 页面文件路径
-      '/text/README.md',
+      {
+        text: '开发中',
+        link: '/foo/',
+      },
+      {
+        text: '维护中',
+        link: '/foo/',
+      },
+      {
+        text: '尽请期待',
+        link: '/foo/',
+      },
+
     ],
   },
 
